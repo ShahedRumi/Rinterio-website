@@ -14,7 +14,8 @@
                 primary: 'rgb(171, 239, 95)',
                 light: 'rgb(115, 115, 115)',
                 heading: 'rgb(33, 33, 33)',
-                secondary: 'rgb(73, 73, 73)'
+                secondary: 'rgb(73, 73, 73)',
+                background: 'rgb(243 244 246)'
               }
             }
           }
@@ -23,43 +24,89 @@
 </head>
 <body>
     
-    <header class="container mx-auto">
-      <section class="w-11/12 mx-auto py-5">
-        <div class="navbar bg-base-100 p-0">
-          <div class="navbar-start">
-            <a class="text-3xl text-heading font-extrabold"><span class="mr-2"><i class="fa-solid fa-arrow-right -rotate-45 p-3 bg-primary rounded-full"></i></span>Rinterio</a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 space-x-5">
-              <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Home</a></li>
-              <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Services</a></li>
-              <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Portfolio</a></li>
-              <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Blogs</a></li>
-              <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Contact US</a></li>
-            </ul>
-          </div>
-          <div class="navbar-end">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost border rounded-full bg-primary p-4 lg:hidden">
-                <i class="fa-solid fa-bars"></i>
+    <header class="container mx-auto pb-20 bg-background">
+      <!-- Navbar -->
+      <section class="w-11/12 mx-auto py-8">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer">
+              <div class="bg-primary w-8 h-8 flex justify-center items-center rounded-full">
+                <i class="fa-solid fa-arrow-right -rotate-45"></i>
               </div>
-              <ul
-                tabindex="0"
-                class="menu right-0 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Home</a></li>
-                <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Services</a></li>
-                <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Portfolio</a></li>
-                <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Blogs</a></li>
-                <li class="text-lg text-light hover:font-extrabold text-secondary"><a>Contact US</a></li>                
-              </ul>
+              <a class="text-3xl text-heading font-extrabold">Rinterio</a>
             </div>
-          </div>
+            <div class="hidden lg:flex">
+                <ul class="flex items-center gap-9">
+                    <li class="text-light hover:text-heading"><a class="cursor-pointer">Home</a></li>
+                    <li class="text-light hover:text-heading"><a class="cursor-pointer">Services</a></li>
+                    <li class="text-light hover:text-heading"><a class="cursor-pointer">Portfolio</a></li>
+                    <li class="text-light hover:text-heading"><a class="cursor-pointer">Blogs</a></li>
+                    <li class="text-light hover:text-heading"><a class="cursor-pointer">Contact Us</a></li>
+                  </ul>
+                  
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="hidden md:flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass rounded-full p-3 bg-white cursor-pointer"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full p-3 bg-white cursor-pointer"></i>
+                <button class="btn bg-primary font-bold rounded-full">Book Consult <i class="fa-solid fa-arrow-right rounded-full p-1 -rotate-45 bg-black text-white"></i></button>
+              </div>
+              <div class="dropdown block lg:hidden">
+                <div tabindex="0" role="button" class="lg:hidden">
+                    <i class="fa-solid fa-bars rounded-full p-3 bg-white"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content right-0 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Home</a></li>
+                    <li><a>Services</a></li>         
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
         </div>
       </section>
+
+      <!-- Banner -->
+       <section class="w-11/12 mx-auto text-center space-y-6 sm:w-9/12">
+        <img class="mx-auto" src="images/banner.png" alt="">
+        <h1 class="text-heading text-4xl lg:text-6xl font-extrabold">A barn house of this design  has a striking appearance</h1>
+        <p class="text-secondary">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="btn w-full rounded-full bg-[#e1f8c4] font-bold px-6 py-2 sm:w-auto">View Details <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-primary"></i></button>
+       </section>
     </header>
 
-    <main class="container mx-auto">
-
+    <main class="container mx-auto bg-gray-200">
+      <!-- Design -->
+      <section class="w-11/12 mx-auto space-y-6 grid gap-8 lg:grid-cols-2 items-center py-20">
+        <div class="space-y-6">
+          <div class="space-y-6 text-center lg:text-left">
+            <h1 class="text-2xl font-bold text-heading lg:text-4xl">We design thoughtful, liveable spaces</h1>
+            <p class="text-secondary">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          </div>
+          <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-1">
+            <div class="flex items-center gap-6 p-6 bg-white rounded-xl">
+              <img src="images/commercial.png" alt="">
+              <div class="space-y-1 lg:w-3/4">
+                <h1 class="font-bold text-xl">Commercial</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-6 p-6 bg-white rounded-xl">
+              <img src="images/residential.png" alt="">
+              <div class="space-y-1 lg:w-3/4">
+                <h1 class="font-bold text-xl">Residential</h1>
+                <p>The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>       
+          </div>
+        </div>
+        <div>
+          <img class="w-full" src="images/Rectangle.png" alt="">
+        </div>
+      </section>
     </main>
 
     <footer class="container mx-auto">
