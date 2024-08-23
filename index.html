@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rinterio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -16,13 +19,16 @@
                 heading: 'rgb(33, 33, 33)',
                 secondary: 'rgb(73, 73, 73)',
                 background: 'rgb(243 244 246)'
+              },
+              fontFamily: {
+                manrope: "Manrope, sans-serif"
               }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="font-manrope">
     
     <header class="container mx-auto pb-20 bg-background">
       <!-- Navbar -->
@@ -71,7 +77,7 @@
       <!-- Banner -->
        <section class="w-11/12 mx-auto text-center space-y-6 sm:w-9/12">
         <img class="mx-auto" src="images/banner.png" alt="">
-        <h1 class="text-heading text-4xl lg:text-6xl font-extrabold">A barn house of this design  has a striking appearance</h1>
+        <h1 class="text-heading text-4xl lg:text-6xl font-black">A barn house of this design  has a striking appearance</h1>
         <p class="text-secondary">Transform your home into a haven of comfort and style with designs tailored to your lifestyle. Our designs are tailored to meet your lifestyle needs while providing a warm, rustic ambiance.</p>
         <button class="btn w-full rounded-full bg-[#e1f8c4] font-bold px-6 py-2 sm:w-auto">View Details <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-primary"></i></button>
        </section>
@@ -111,23 +117,23 @@
 
       <!-- Members -->
        <section class="w-11/12 mx-auto pb-20">
-        <div class="bg-white p-10 rounded-2xl grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div class="text-center">
+        <div class="bg-white p-10 rounded-2xl grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="text-center space-y-1">
             <i class="fa-solid fa-message text-3xl"></i>
             <h3 class="font-extrabold text-4xl text-heading">235+</h3>
             <p class="text-light">Happy Client Review</p>
           </div>
-          <div class="text-center">
+          <div class="text-center space-y-1">
             <i class="fa-solid fa-clipboard text-3xl"></i>
             <h3 class="font-extrabold text-4xl text-heading">50+</h3>
             <p class="text-light">Work Departments</p>
           </div>
-          <div class="text-center">
+          <div class="text-center space-y-1">
             <i class="fa-solid fa-people-group text-3xl"></i>
             <h3 class="font-extrabold text-4xl text-heading">30K+</h3>
             <p class="text-light">Our Happy Client</p>
           </div>
-          <div class="text-center">
+          <div class="text-center space-y-1">
             <i class="fa-solid fa-user-group text-3xl"></i>
             <h3 class="font-extrabold text-4xl text-heading">307+</h3>
             <p class="text-light">Staff Members</p>
@@ -149,17 +155,17 @@
               <p class="text-secondary">We start by understand your vision and reflects our unique style.</p>
             </div>
             <div class="p-5 space-y-3 bg-[#EFDA6E] rounded-xl">
-              <img src="images/concept.png" alt="">
+              <img src="images/flow-chart.png" alt="">
               <h3 class="font-extrabold text-xl text-heading">Design Process</h3>
               <p class="text-secondary">Our team crafts detailed designs that align with your preferences and thoughts. </p>
             </div>
             <div class="p-5 space-y-3 bg-[#A4DAC3] rounded-xl">
-              <img src="images/concept.png" alt="">
+              <img src="images/vision.png" alt="">
               <h3 class="font-extrabold text-xl text-heading">Supervision</h3>
               <p class="text-secondary">We oversee every aspect of the project to ensure it to our high standards.</p>
             </div>
             <div class="p-5 space-y-3 bg-[#77AAEA] rounded-xl">
-              <img src="images/concept.png" alt="">
+              <img src="images/budget-planning.png" alt="">
               <h3 class="font-extrabold text-xl text-heading">Budget Planning</h3>
               <p class="text-secondary">We work closely with you to create a budget that meets your demands.</p>
             </div>
@@ -167,7 +173,6 @@
         </section>
 
         <article class="bg-background">
-
           <section class="w-11/12 mx-auto py-20 space-y-6">
 
             <div class="space-y-5 text-center w-full mx-auto lg:w-8/12">
@@ -180,11 +185,11 @@
 
               <div class="p-4 grid gap-6 bg-white rounded-3xl sm:grid-cols-[1fr,1.25fr] sm:items-center sm:col-span-2 lg:order-1 lg:col-span-8">
             
-                <img class="w-full" src="images/img1.png" alt="">
+                <img class="w-full h-full" src="images/img1.png" alt="">
                     
               <div class="space-y-4">
-                <h3 class="text-xl font-bold">Commercial</h3>
-                <p>We create professional environments that are functional, stylish, and aligned with your brand identity.create diversity and creativity in our projects.</p>
+                <h3 class="text-xl font-bold text-heading">Commercial</h3>
+                <p class="text-secondary">We create professional environments that are functional, stylish, and aligned with your brand identity.create diversity and creativity in our projects.</p>
                 <div class="flex items-center gap-4 cursor-pointer">
                   <h3 class="font-bold">View Details</h3>
                   <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-primary"></i>
@@ -209,8 +214,8 @@
                 <img class="w-full h-full" src="images/img4.png" alt="">
               
               <div class="space-y-4">
-                <h3 class="text-xl font-bold">Residential</h3>
-                <p>Our residential designs are tailored to reflect your personality with style.</p>
+                <h3 class="text-xl font-bold text-heading">Residential</h3>
+                <p class="text-secondary">Our residential designs are tailored to reflect your personality with style.</p>
                 <div class="flex items-center gap-4 cursor-pointer">
                   <h3 class="font-bold">View Details</h3>
                   <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-primary"></i>
@@ -219,15 +224,15 @@
             </div>
   
             <div class="bg-white p-4 rounded-3xl lg:order-3 lg:col-span-3">
-              <div>
-                <img class="w-full" src="images/img3.png" alt="">
-              </div>
+              
+                <img class="w-full h-full" src="images/img3.png" alt="">
+              
             </div>
   
             <div class="bg-white p-4 rounded-3xl lg:order-5 lg:col-span-3">
-              <div>
-                <img class="w-full" src="images/img5.png" alt="">
-              </div>
+              
+                <img class="w-full h-full" src="images/img5.png" alt="">
+              
             </div>
 
             </div>
@@ -243,14 +248,14 @@
 
           <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
             <div class="p-5 bg-white rounded-xl grid gap-4 items-center sm:grid-cols-[1fr,1.75fr] lg:grid-cols-1">
-              <img class="w-full" src="images/article1.png" alt=""> 
-              <div class="space-y-1">
+              <img class="w-full h-full" src="images/article1.png" alt=""> 
+              <div class="space-y-2">
                 <div class="flex gap-4">
                   <p class="text-light"><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                   <p class="text-light"><i class="fa-regular fa-user"></i> By Admin</p>
                 </div>
                 <h3 class="text-lg text-heading font-bold lg:text-xl">How to choose the furniture right for home.</h3>
-                <p class="text-secondary">Learn how to select the perfect furniture that meet functional needs. </p>
+                <p class="text-secondary">Learn how to select furniture that meet functional needs. </p>
                 <div class="flex items-center gap-3 cursor-pointer">
                   <h3 class="font-bold">Read More</h3>
                   <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-primary"></i>
@@ -258,8 +263,8 @@
               </div>
             </div>
             <div class="p-5 bg-white rounded-xl grid gap-4 items-center sm:grid-cols-[1fr,1.75fr] lg:grid-cols-1">
-              <img class="w-full" src="images/article2.png" alt=""> 
-              <div class="space-y-1">
+              <img class="w-full h-full" src="images/article2.png" alt=""> 
+              <div class="space-y-2">
                 <div class="flex gap-4">
                   <p class="text-light"><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                   <p class="text-light"><i class="fa-regular fa-user"></i> By Admin</p>
@@ -273,8 +278,8 @@
               </div>
             </div>
             <div class="p-5 bg-white rounded-xl grid gap-4 items-center sm:grid-cols-[1fr,1.75fr] lg:grid-cols-1">
-              <img class="w-full" src="images/article3.png" alt=""> 
-              <div class="space-y-1">
+              <img class="w-full h-full" src="images/article3.png" alt=""> 
+              <div class="space-y-2">
                 <div class="flex gap-4">
                   <p class="text-light"><i class="fa-regular fa-calendar"></i> July14, 2024</p>
                   <p class="text-light"><i class="fa-regular fa-user"></i> By Admin</p>
@@ -290,6 +295,49 @@
           </div>
         </section>
 
+        <section class="w-11/12 mx-auto">
+          <div class="space-y-5 text-center w-full mx-auto lg:w-8/12">
+            <button class="py-2 px-5 bg-[#e1f8c4] rounded-full"><i class="fa-solid fa-arrow-right"></i> Rinterio Q & A</button>
+            <h1 class="text-2xl font-bold text-heading lg:text-4xl">Read Our Frequently Asked Question</h1>
+            <p class="text-secondary">We have compiled answers to some of the most common inquiries from our clients. If you need further clarification, don't hesitate to contact us directly.</p>
+          </div>
+
+          <div class="grid gap-6 lg:grid-cols-2 items-center">
+            <img class="justify-self-center" src="images/faq.png" alt="">
+            <div class="space-y-4">
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl text-heading font-bold">What services do you offer?</div>
+                <div class="collapse-content">
+                  <p class="text-secondary">We specialize in interior design, architecture, and space planning for both residential and commercial projects. We provide end-to-end services, from concept development to final execution.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl text-heading font-bold">Do you offer custom designs?</div>
+                <div class="collapse-content">
+                  <p class="text-secondary">Yes, all of our designs are customized to meet the unique needs and preferences of our clients. We work closely with you to ensure the final design aligns with your vision.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl text-heading font-bold">How long does a typical project take?</div>
+                <div class="collapse-content">
+                  <p class="text-secondary">The duration of a project depends on its scope and complexity. Generally, residential projects take 3-6 months, while commercial projects can vary between 6-12 months.
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl text-heading font-bold">Can I see samples of your work?</div>
+                <div class="collapse-content">
+                  <p class="text-secondary">Absolutely! You can view our portfolio on our website, which showcases a range of residential and commercial projects we've completed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <article class="bg-[url('images/bg.jpg')] bg-no-repeat bg-center bg-cover py-16">
           <section class="w-11/12 mx-auto sm:w-9/12 space-y-10">
             <div class="space-y-5 text-center w-full mx-auto lg:w-8/12">
@@ -302,7 +350,7 @@
               <input class="input rounded-full" type="text" placeholder="Last Name*">
               <input class="input rounded-full" type="text" placeholder="Phone Number*">
               <input class="input rounded-full" type="text" placeholder="Email*">
-              <textarea name="" id="" class="p-4 sm:col-span-2 row-span-4 rounded-3xl" placeholder="Write your message here"></textarea>
+              <textarea name="" id="" class="textarea p-4 sm:col-span-2 row-span-4 rounded-3xl resize-none outline-none" placeholder="Write your message here*"></textarea>
               <button class="sm:col-span-2 btn w-full rounded-full bg-primary font-bold px-6 py-2 sm:w-auto">View Details <i class="fa-solid fa-arrow-right rounded-full p-2 -rotate-45 bg-black text-white"></i></button>
             </div>
           </section>
